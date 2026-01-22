@@ -1,0 +1,386 @@
+/* Application Form Styles - Professional Design */
+.application-form {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #333;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.form-header {
+  background: linear-gradient(135deg, #0077b5 0%, #005a87 100%);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.form-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.form-content {
+  padding: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0077b5;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label {
+  color: #005a87;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 15px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0077b5;
+  box-shadow: 0 0 0 3px rgba(0, 119, 181, 0.1);
+  transform: translateY(-2px);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: #0077b5;
+  background: rgba(0, 119, 181, 0.02);
+}
+
+.form-group small {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.back-btn,
+.submit-btn {
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  min-width: 150px;
+}
+
+.back-btn {
+  background: #f8f9fa;
+  color: #0077b5;
+  border: 2px solid #0077b5;
+}
+
+.back-btn:hover {
+  background: #0077b5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.3);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #0077b5 0%, #005a87 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .application-form {
+    padding: 40px 10px;
+  }
+
+  .form-container {
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .form-header {
+    padding: 30px 15px;
+  }
+
+  .form-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-header p {
+    font-size: 0.9rem;
+  }
+
+  .form-content {
+    padding: 20px 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .back-btn,
+  .submit-btn {
+    width: 100%;
+    min-width: unset;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .application-form {
+    padding: 60px 15px;
+  }
+
+  .form-container {
+    max-width: 700px;
+  }
+
+  .form-header {
+    padding: 50px 30px;
+  }
+
+  .form-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .form-header p {
+    font-size: 1.1rem;
+  }
+
+  .form-content {
+    padding: 35px 30px;
+  }
+
+  .form-grid {
+    gap: 25px;
+  }
+
+  .form-actions {
+    gap: 15px;
+  }
+
+  .back-btn,
+  .submit-btn {
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .application-form {
+    padding: 80px 20px;
+  }
+
+  .form-container {
+    max-width: 800px;
+  }
+
+  .form-header {
+    padding: 60px 40px;
+  }
+
+  .form-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .form-header p {
+    font-size: 1.2rem;
+  }
+
+  .form-content {
+    padding: 40px;
+  }
+
+  .form-grid {
+    gap: 30px;
+  }
+
+  .form-actions {
+    gap: 20px;
+  }
+
+  .back-btn,
+  .submit-btn {
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .application-form {
+    padding: 100px 30px;
+  }
+
+  .form-container {
+    max-width: 900px;
+  }
+
+  .form-header {
+    padding: 70px 50px;
+  }
+
+  .form-header h1 {
+    font-size: 3rem;
+  }
+
+  .form-header p {
+    font-size: 1.4rem;
+  }
+
+  .form-content {
+    padding: 50px;
+  }
+
+  .form-grid {
+    gap: 35px;
+  }
+
+  .form-actions {
+    gap: 25px;
+  }
+
+  .back-btn,
+  .submit-btn {
+    min-width: 170px;
+    padding: 18px 35px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Loading state */
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+}
+
+/* Error message */
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}

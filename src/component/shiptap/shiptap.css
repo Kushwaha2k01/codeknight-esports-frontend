@@ -1,0 +1,81 @@
+.shiptap {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: -10px;
+}
+
+.shiptap-container {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shiptap-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.shiptap-logo {
+  max-width: 400px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.shiptap-button-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.join-wishlist-btn {
+  background-color: #d12222;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(175, 10, 10, 0.3);
+}
+
+.join-wishlist-btn:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.4);
+}
+
+.join-wishlist-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .shiptap {
+    height: 100vh;
+  }
+
+  .shiptap-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .shiptap-button-container {
+    justify-content: center;
+  }
+
+  .join-wishlist-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}

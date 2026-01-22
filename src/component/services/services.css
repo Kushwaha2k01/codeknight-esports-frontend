@@ -1,0 +1,221 @@
+/* Services Section Styles */
+.services {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black font color */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: black; /* Accent color for title */
+  animation: fadeInUp 1s ease-out;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white; /* Light gray for card background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+.service-card:nth-child(6) { animation-delay: 0.6s; }
+.service-card:nth-child(7) { animation-delay: 0.7s; }
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 119, 181, 0.3); /* Shadow with #0077b5 tint */
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black; /* Accent color for card titles */
+}
+
+.service-subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0077b5; /* Dark gray for subtitles */
+}
+
+.service-card p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.service-items {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.service-items li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.service-items li::before {
+  content: '✓';
+  color: #0077b5; /* Checkmark in accent color */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services {
+    padding: 50px 15px;
+  }
+  .services-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .services-grid {
+    gap: 25px;
+  }
+  .service-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding: 30px 5px;
+  }
+  .services-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .service-card {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .service-card-title {
+    font-size: 1.2rem;
+  }
+  .service-subtitle {
+    font-size: 0.95rem;
+  }
+  .service-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .service-items li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 30px 8px;
+  }
+  .services-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .services-grid {
+    gap: 15px;
+  }
+  .service-card {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .service-card-title {
+    font-size: 1.2rem;
+  }
+  .service-subtitle {
+    font-size: 0.95rem;
+  }
+  .service-card p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  .service-items li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .services {
+    padding: 20px 5px;
+  }
+  .services-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .services-grid {
+    gap: 10px;
+  }
+  .service-card {
+    padding: 10px;
+  }
+  .service-card-title {
+    font-size: 1.1rem;
+  }
+  .service-subtitle {
+    font-size: 0.9rem;
+  }
+  .service-card p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .service-items li {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    padding-left: 15px;
+  }
+}
