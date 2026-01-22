@@ -183,43 +183,43 @@
 /* Responsive Design */
 @media (max-width: 767px) {
   .footer {
-    padding: 25px 5px 10px;
+    padding: 15px 5px 5px;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
     text-align: center;
   }
 
   .footer-section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .footer-logo {
-    width: 120px;
+    width: 100px;
   }
 
   .footer-section h4 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .footer-section p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .footer-section li {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 
   .footer-bottom {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     text-align: center;
   }
 
   .footer-bottom-left p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .footer-bottom-right {
@@ -228,16 +228,16 @@
 
   .footer-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .follow-us .social-icons {
-    gap: 10px;
+    gap: 8px;
   }
 
   .follow-us img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 }
 

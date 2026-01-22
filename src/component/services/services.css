@@ -130,6 +130,7 @@
   .services-title {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    animation: none; /* Disable animation on mobile */
   }
   .services-grid {
     grid-template-columns: 1fr;
@@ -138,6 +139,8 @@
   .service-card {
     padding: 12px;
     border-radius: 8px;
+    animation: none; /* Disable animation on mobile */
+    transition: none; /* Disable hover transitions on mobile */
   }
   .service-card-title {
     font-size: 1.2rem;
