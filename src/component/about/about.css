@@ -139,33 +139,6 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .about {
-    padding: 50px 20px;
-  }
-
-  .intro {
-    font-size: 2.5rem;
-  }
-
-  .about-container {
-    gap: 50px;
-  }
-
-  .about-left h2 {
-    font-size: 2.5rem;
-  }
-
-  .about-left p {
-    font-size: 1.2rem;
-  }
-
-  .learn-more-btn {
-    padding: 12px 24px;
-    font-size: 1rem;
-  }
-}
-
 @media (min-width: 1441px) {
   .about {
     padding: 60px 30px;

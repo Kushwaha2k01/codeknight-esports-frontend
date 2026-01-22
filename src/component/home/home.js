@@ -11,8 +11,10 @@ const Home = () => {
     <section id="home" className="home">
       <Spline className="spline-background" scene="https://prod.spline.design/5AncgiDFGQNKKdGz/scene.splinecode" />
       <div className="home-content">
-        <h1>Welcome to Codeknight Esports</h1>
-        <h2>Where Imagination Becomes Interaction</h2>
+        <div className="home-title">
+          <h1>Welcome to Codeknight Esports</h1>
+          <h2>Where Imagination Becomes Interaction</h2>
+        </div>
         <p>
           We're not just building games - we're shaping the future of gaming.<br />
           From pixel-perfect testing to immersive gameplay experiences,<br />

@@ -31,10 +31,12 @@
   margin-right: auto;
 }
 
-/* Transparent grid layout */
+/* Horizontal flex layout */
 .collab-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-top: 60px;
   max-width: 1000px;
@@ -105,7 +107,9 @@
   }
 
   .collab-grid {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     margin-top: 40px;
   }
@@ -144,7 +148,9 @@
   }
 
   .collab-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     margin-top: 50px;
   }
@@ -183,7 +189,9 @@
   }
 
   .collab-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 60px;
   }

@@ -123,14 +123,13 @@
 
   .team-member-card {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     padding: 12px;
   }
 
   .member-image {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
+    width: 150px;
+    height: 150px;
   }
 
   .member-name {
@@ -185,47 +184,6 @@
   .member-linkedin {
     padding: 7px 14px;
     font-size: 0.95rem;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .team-section {
-    padding: 60px 20px;
-  }
-
-  .team-title {
-    font-size: 2.5rem;
-  }
-
-  .team-description {
-    font-size: 1.2rem;
-  }
-
-  .team-members {
-    gap: 30px;
-  }
-
-  .team-member-card {
-    width: 280px;
-    padding: 20px;
-  }
-
-  .member-image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .member-name {
-    font-size: 1.5rem;
-  }
-
-  .member-position {
-    font-size: 1rem;
-  }
-
-  .member-linkedin {
-    padding: 8px 16px;
-    font-size: 1rem;
   }
 }
 

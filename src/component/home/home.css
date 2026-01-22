@@ -2,6 +2,8 @@
   position: relative;
   min-height: 100vh;
   color: #ffffff;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .spline-background {
@@ -23,6 +25,31 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+
+.home-title h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  color: #b0b0b0;
+  white-space: nowrap;
 }
 
 .home-content p {
@@ -91,26 +118,32 @@
 /* Responsive Design */
 @media (max-width: 767px) {
   .home {
-    min-height: 70vh;
+    min-height: 40vh;
+    margin-bottom: 0;
   }
 
   .spline-background {
-    height: 70vh;
+    height: 60vh;
   }
 
   .home-content {
     padding: 0 3%;
-    min-height: 70vh;
+    min-height: 80vh;
     text-align: center;
   }
 
+  .home-title {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .home-content h1 {
-    font-size: 1.8rem;
-    white-space: normal;
+    font-size: 1.5rem;
+    white-space: nowrap;
   }
 
   .home-content h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .home-content p {
@@ -143,29 +176,6 @@
 
   .view-portfolio-btn {
     padding: 12px 25px;
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .home-content {
-    padding: 0 5%;
-  }
-
-  .home-content h1 {
-    font-size: 3rem;
-  }
-
-  .home-content h2 {
-    font-size: 2rem;
-  }
-
-  .home-content p {
-    font-size: 1.2rem;
-  }
-
-  .view-portfolio-btn {
-    padding: 12px 24px;
     font-size: 1rem;
   }
 }
