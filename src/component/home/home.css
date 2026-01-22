@@ -128,12 +128,16 @@
 /* Responsive Design */
 @media (max-width: 767px) {
   .home {
-    min-height: 40vh;
+    min-height: 100vh;
     margin-bottom: 0;
   }
 
   .spline-background {
     height: 60vh;
+  }
+
+  .static-background {
+    height: 100vh;
   }
 
   .home-content {

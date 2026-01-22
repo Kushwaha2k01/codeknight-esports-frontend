@@ -125,7 +125,8 @@
 
 @media (max-width: 767px) {
   .services {
-    padding: 30px 5px;
+    padding: 30px 10px;
+    display: block;
   }
   .services-title {
     font-size: 1.5rem;
@@ -133,7 +134,8 @@
     animation: none; /* Disable animation on mobile */
   }
   .services-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
   }
   .service-card {
@@ -141,6 +143,7 @@
     border-radius: 8px;
     animation: none; /* Disable animation on mobile */
     transition: none; /* Disable hover transitions on mobile */
+    display: block;
   }
   .service-card-title {
     font-size: 1.2rem;
@@ -152,6 +155,9 @@
     font-size: 0.85rem;
     line-height: 1.4;
     margin-bottom: 10px;
+  }
+  .service-items {
+    display: block;
   }
   .service-items li {
     font-size: 0.8rem;
