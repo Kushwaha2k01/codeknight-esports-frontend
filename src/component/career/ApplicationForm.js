@@ -43,7 +43,7 @@ const ApplicationForm = () => {
     }
 
     try {
-      const response = await fetch('/api/apply', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/apply`, {
         method: 'POST',
         body: formDataToSend,
       });

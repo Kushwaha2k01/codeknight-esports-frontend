@@ -34,7 +34,7 @@ const Contact = () => {
     setSubmitMessage('');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
