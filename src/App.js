@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './component/header/header';
-import Shiptap from './component/shiptap/shiptap';
 import Home from './component/home/home';
 import About from './component/about/about';
 import Services from './component/services/services';
@@ -24,7 +23,6 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Shiptap />
               <Home />
               <About />
               <Services />
