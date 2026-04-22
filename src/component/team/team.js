@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Mohammad Zaki Kave",
-    position: "Co-Founder, Director & Head of Business Partnership Manager",
+    position: "Co-Founder, Director & Head of Business Partnership",
     linkedin: "https://www.linkedin.com/in/mohammad-zaki-kave-1277041b1/",
     image: zakiImage
   },
